@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3f896c9-77d3-4c28-8745-6a80cc6a05aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Arithmetic/target/classes/com/myarithmetic/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arithmetic/target/classes/com/myarithmetic/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arithmetic/target/test-classes/com/myarithmetic/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arithmetic/target/test-classes/com/myarithmetic/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/target/classes/com/myarray/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Array/target/classes/com/myarray/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array/target/test-classes/com/myarray/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Array/target/test-classes/com/myarray/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Button/target/classes/com/mybutton/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Button/target/classes/com/mybutton/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Button/target/test-classes/com/mybutton/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Button/target/test-classes/com/mybutton/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Country/target/classes/com/mycountry/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Country/target/classes/com/mycountry/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Country/target/test-classes/com/mycountry/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Country/target/test-classes/com/mycountry/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Grading/target/classes/com/mygrading/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Grading/target/classes/com/mygrading/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Grading/target/test-classes/com/mygrading/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Grading/target/test-classes/com/mygrading/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HallowPattern/target/classes/com/myhallowpattern/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HallowPattern/target/classes/com/myhallowpattern/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HallowPattern/target/test-classes/com/myhallowpattern/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HallowPattern/target/test-classes/com/myhallowpattern/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Increment/target/classes/com/myincrement/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Increment/target/classes/com/myincrement/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Increment/target/test-classes/com/myincrement/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Increment/target/test-classes/com/myincrement/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leap/target/classes/com/myleap/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Leap/target/classes/com/myleap/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Leap/target/test-classes/com/myleap/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Leap/target/test-classes/com/myleap/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Looping/target/classes/com/mylooping/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Looping/target/classes/com/mylooping/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Looping/target/test-classes/com/mylooping/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Looping/target/test-classes/com/mylooping/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyApp2/target/classes/com/Tata/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyApp2/target/classes/com/Tata/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyApp2/target/test-classes/com/Tata/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyApp2/target/test-classes/com/Tata/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NumberPattern/target/classes/com/mynumberpattern/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NumberPattern/target/classes/com/mynumberpattern/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NumberPattern/target/test-classes/com/mynumberpattern/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NumberPattern/target/test-classes/com/mynumberpattern/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OddEven/target/classes/com/myoddeven/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OddEven/target/classes/com/myoddeven/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OddEven/target/test-classes/com/myoddeven/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../OddEven/target/test-classes/com/myoddeven/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/target/classes/com/myoperator/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/target/classes/com/myoperator/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Operator/target/test-classes/com/myoperator/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Operator/target/test-classes/com/myoperator/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern/target/classes/com/mypattern/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern/target/classes/com/mypattern/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pattern/target/test-classes/com/mypattern/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Pattern/target/test-classes/com/mypattern/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TernaryOperator/target/classes/com/myternaryoperator/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TernaryOperator/target/classes/com/myternaryoperator/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TernaryOperator/target/test-classes/com/myternaryoperator/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TernaryOperator/target/test-classes/com/myternaryoperator/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoArray/target/classes/com/mytwoarray/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoArray/target/classes/com/mytwoarray/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoArray/target/test-classes/com/mytwoarray/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoArray/target/test-classes/com/mytwoarray/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Weight/target/classes/com/myweight/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Weight/target/classes/com/myweight/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Weight/target/test-classes/com/myweight/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Weight/target/test-classes/com/myweight/app/AppTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2vQpYQ0KCAMAH40uY5GYiRDwXEo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "collections",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "E:/Java_work/Maven/ExceptionHandling/src/Main.java"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3f896c9-77d3-4c28-8745-6a80cc6a05aa" name="Changes" comment="" />
+      <created>1744087200564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744087200564</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
