@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a27d892-fe2b-44d1-935b-e555ce2d8230" name="Changes" comment="" />
+    <list default="true" id="2a27d892-fe2b-44d1-935b-e555ce2d8230" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,13 +47,15 @@
     "Application.MapWrite.executor": "Run",
     "Application.SetAdd.executor": "Run",
     "Application.SetIterator.executor": "Run",
+    "Application.SetRead.executor": "Run",
     "Application.SetRemove.executor": "Run",
     "Application.SetSearch.executor": "Run",
     "Application.SetSort.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "exceptions",
+    "git-widget-placeholder": "collections",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Java_work/JavaCollection",
     "onboarding.tips.debug.path": "E:/Java_work/JavaCollection/src/Main.java"
   }
 }]]></component>
