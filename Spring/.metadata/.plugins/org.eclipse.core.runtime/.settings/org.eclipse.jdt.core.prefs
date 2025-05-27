@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=21
+org.eclipse.jdt.core.compiler.compliance=21
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=21
+org.eclipse.jdt.core.userLibrary.springjars=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/jar file/commons-logging-1.3.5.jar"/>\r\n\t<archive path\="C\:/jar file/spring-beans-7.0.0-M4.jar"/>\r\n\t<archive path\="C\:/jar file/spring-context-7.0.0-M4.jar"/>\r\n\t<archive path\="C\:/jar file/spring-core-7.0.0-M4.jar"/>\r\n\t<archive path\="C\:/jar file/spring-expression-7.0.0-M4.jar"/>\r\n</userlibrary>\r\n
