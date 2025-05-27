@@ -1,0 +1,5 @@
+package n.sp.entities;
+
+public class User {
+
+}

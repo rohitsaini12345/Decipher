@@ -1,0 +1,10 @@
+package in.smart.HibernateCrudOperations;
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      
+    }
+}

@@ -1,0 +1,118 @@
+package in.smart.HibernateCrudOperations;
+
+
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import n.sp.entities.User;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      Configuration cfg =new Configuration();
+      cfg.configure("/in/sp/config/hibernate.cfg.xml");
+      
+      SessionFactory sessionFactory=cfg.buildSessionFactory();
+     
+      insertUser(sessionFactory);
+      
+      readAll(sessionFactory);
+      
+      readUserById(sessionFactory);
+      
+      updateUser(sessionFactory);
+      
+      deleteUser(sessionFactory);
+      
+      sessionFactory.close();
+      
+    }
+    
+    static void insertUser(SessionFactory sf) {
+    	 Session session = sf.openSession();
+         Transaction tx = session.beginTransaction();
+
+         System.out.println("Insertion");
+         User user = new User();
+         user.setName("Manoj");
+         user.setEmail("manoj@gmail.com");
+         user.setPassword("Manoj123");
+         user.setGender("male");
+         user.setCity("Bikaner");
+
+         session.save(user);
+         tx.commit();
+         session.close();
+
+         System.out.println("User inserted successfully");
+    }
+    
+    static void readAll(SessionFactory sf) {
+    	Session session = sf.openSession() ;
+    	List<User>users=session.createQuery("from User",User.class).list();
+    	
+    	System.out.println("Read All");
+    	for(User us:users) {
+    		System.out.println(us.getId()+"-"+us.getName()+"-"+us.getEmail()+
+    				"-"+us.getPassword()+"-"+us.getGender()+"-"+us.getCity());
+    		session.close();
+    	}
+    	
+    }
+    
+    static void readUserById(SessionFactory sf) {
+    	Session session=sf.openSession();
+    	
+    	System.out.println("Read only one");
+    	  User user = session.get(User.class, 1L);
+          if (user != null) {
+              System.out.println("Found: " + user.getName());
+          } else {
+              System.out.println("User not found.");
+          }
+          session.close();
+    }
+    
+       static void updateUser(SessionFactory sf) {
+    		Session session=sf.openSession();
+    	    Transaction tx = session.beginTransaction();
+    		
+    	    System.out.println("Updation");
+    		 User user = session.get(User.class, 3L);
+    	        if (user != null) {
+    	            user.setCity("UpdatedCity");
+    	            session.update(user);
+    	            tx.commit();
+    	            System.out.println("User updated.");
+    	        } else {
+    	            System.out.println("User not found.");
+    	            tx.rollback();
+    	        }
+    	        session.close();
+    		
+          }
+       
+       static void deleteUser(SessionFactory sf) {
+    	   Session session =sf.openSession();
+    	   Transaction tx=session.beginTransaction();
+    	   
+    	   System.out.println("Deletion");
+    	   
+    	   User user =new User();
+     	   user.setId(7L);
+     	  
+     	   session.delete(user);
+     	   tx.commit();
+     	  
+     	   System.out.println("User details deleted successfully");
+       }
+          
+          
+    
+}
