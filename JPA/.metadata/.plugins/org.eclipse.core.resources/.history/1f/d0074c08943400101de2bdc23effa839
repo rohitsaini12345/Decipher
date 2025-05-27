@@ -1,0 +1,53 @@
+package in.sp.main;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import in.sp.main.entities.Student;
+import in.sp.main.services.StudentService;
+import in.sp.main.services.StudentServiceImpl;
+
+@SpringBootApplication
+public class SpringDataJpa1Application {
+
+	public static void main(String[] args) {
+		ApplicationContext context=SpringApplication.run(SpringDataJpa1Application.class, args);
+		
+		StudentService stdService=context.getBean(StudentService.class);
+		
+		//insertion
+		
+		Student std=new Student();
+		std.setName("Mohit");
+		std.setRollno(105);
+		std.setMarks(91.2f);
+		
+		
+		boolean status= stdService.addStudentDetails(std);
+		if(status)
+		{
+			System.out.println("Student inserted successfully");
+		}
+		else {
+			System.out.println("Student not inserted successfully");
+		}
+		
+		
+		//selection
+		
+		List<Student> stdList=stdService.getAllStudent();
+		
+		for(Student std1:stdList) {
+			System.out.println("Id :"+std1.getId()+" - "+"Name :"+std1.getName()+" - "+"Rollno :"+std1.getRollno()+
+					" - "+"Marks :"+std1.getMarks());
+			
+			System.out.println("---------------");
+		}
+	}
+	
+		
+
+}

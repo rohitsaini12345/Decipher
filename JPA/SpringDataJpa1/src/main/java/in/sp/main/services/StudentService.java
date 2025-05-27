@@ -1,0 +1,11 @@
+package in.sp.main.services;
+
+import java.util.List;
+
+import in.sp.main.entities.Student;
+
+public interface StudentService {
+	public boolean addStudentDetails(Student std);
+	
+	public List<Student>getAllStudent();
+}

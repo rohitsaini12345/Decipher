@@ -1,0 +1,66 @@
+package in.sp.main;
+
+import java.util.List;
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+
+import in.sp.main.entities.Student;
+import in.sp.main.services.StudentService;
+import in.sp.main.services.StudentServiceImpl;
+
+@SpringBootApplication
+public class SpringDataJpa1Application {
+
+	public static void main(String[] args) {
+		ApplicationContext context=SpringApplication.run(SpringDataJpa1Application.class, args);
+		
+		StudentService stdService=context.getBean(StudentService.class);
+		
+		//insertion
+		
+		Student std=new Student();
+		std.setName("Shyam");
+		std.setRollno(107);
+		std.setMarks(83.2f);
+		
+		
+		boolean status= stdService.addStudentDetails(std);
+		if(status)
+		{
+			System.out.println("Student inserted successfully");
+		}
+		else {
+			System.out.println("Student not inserted successfully");
+		}
+		
+		
+		//selection
+		
+		PageRequest pageable = PageRequest.of(0, 5, Sort.by("name").ascending());
+		Page<Student> studentPage = stdService.getStudentsWithPagination(pageable);
+
+		List<Student> paginatedStudents = studentPage.getContent();
+
+		System.out.println("Paginated Students:");
+		for (Student std1 : paginatedStudents) {
+		    System.out.println("Id :" + std1.getId() + " - " +
+		                       "Name :" + std1.getName() + " - " +
+		                       "Rollno :" + std1.getRollno() + " - " +
+		                       "Marks :" + std1.getMarks());
+			
+			System.out.println("---------------");
+		
+		
+		}
+		
+	}
+	
+		
+
+}
