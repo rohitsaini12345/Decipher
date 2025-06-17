@@ -1,0 +1,5 @@
+spring.application.name=SpringBoot1
+
+
+server.port=9091
+app.custom.message=Welcome to Spring Boot App
