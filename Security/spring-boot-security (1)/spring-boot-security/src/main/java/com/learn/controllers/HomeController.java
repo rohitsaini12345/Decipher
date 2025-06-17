@@ -1,0 +1,26 @@
+package com.learn.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/public")
+public class HomeController {
+
+
+    @GetMapping("public/home")
+    public String home(){
+        return "home";
+    }
+
+    @GetMapping("/login")
+    public String login(){
+        return "this is login";
+    }
+
+    @GetMapping("/register")
+    public String register(){
+        return "this is register";
+    }
+}
