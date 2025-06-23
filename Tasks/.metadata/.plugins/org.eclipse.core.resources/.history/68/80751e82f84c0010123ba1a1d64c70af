@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h2>User Profile</h2>
+	
+    <p><strong>Name:</strong> <span th:text="${user.Name}"></span></p>
+   
+    <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+
+    <a th:href="@{'/user/edit/' + ${user.id}}">Edit Profile</a><br/> |
+    <a th:href="@{/delete-account}">Delete Account</a> |
+    <a th:href="@{/logout}">Logout</a>
+</body>
+</html>
