@@ -1,8 +1,10 @@
 package com.example.service;
 
+import com.example.controller.UserController;
 import com.example.entity.User;
 import com.example.repository.UserRepository;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -11,10 +13,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Slf4j
 @Service
-public class UserServiceImpl implements UserService, org.springframework.security.core.userdetails.UserDetailsService {
-
+public class UserServiceImpl implements UserService {
+    private static final Logger logger= LoggerFactory.getLogger(UserServiceImpl.class);
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
@@ -29,50 +30,39 @@ public class UserServiceImpl implements UserService, org.springframework.securit
     public void registerUser(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRole("USER");
-        log.info("Registering new user:{}", user.getEmail());
+        logger.info("Registering new user:{}", user.getEmail());
         userRepository.save(user);
     }
 
     @Override
     public Optional<User> findByEmail(String email) {
-        log.debug("Finding user by email: {}", email);
+        logger.debug("Finding user by email: {}", email);
 
         return userRepository.findByEmail(email);
     }
 
-    @Override
-    public org.springframework.security.core.userdetails.UserDetails loadUserByUsername(String email) {
-        User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("User not found"));
-
-        return org.springframework.security.core.userdetails.User.builder()
-                .username(user.getEmail())
-                .password(user.getPassword())
-                .roles(user.getRole().replace("ROLE_", ""))
-                .build();
-    }
 
     @Override
     public Optional<User> findById(Long id) {
-        log.debug("Finding user by ID: {}", id);
+        logger.debug("Finding user by ID: {}", id);
         return userRepository.findById(id);
     }
 
     @Override
     public void updateUser(User user) {
-        log.info("Updating user with ID: {}", user.getId());
+        logger.info("Updating user with ID: {}", user.getId());
         userRepository.save(user);
     }
 
     @Override
     public void deleteUser(Long id) {
-        log.warn("Deleting user with ID: {}", id);
+        logger.warn("Deleting user with ID: {}", id);
         userRepository.deleteById(id);
     }
 
     @Override
     public List<User> findAllUsers() {
-        log.info("Fetching all users");
+        logger.info("Fetching all users");
         return userRepository.findAll();
     }
 
@@ -91,7 +81,7 @@ public class UserServiceImpl implements UserService, org.springframework.securit
                 user.setRole("USER");
             }
         }
-        log.info("Saving a list of {} users", users.size());
+        logger.info("Saving a list of {} users", users.size());
         userRepository.saveAll(users);
     }
 

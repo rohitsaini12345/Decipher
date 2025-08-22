@@ -12,6 +12,9 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Gender</th>
+                <th>Phone</th>
+                <th>Address</th>
                 <th>Role</th>
                 <th>Actions</th>
             </tr>
@@ -21,6 +24,9 @@
                 <td th:text="${user.id}"></td>
                 <td th:text="${user.name}"></td>
                 <td th:text="${user.email}"></td>
+                <td th:text="${user.gender}"></td>
+                <td th:text="${user.phone}"></td>
+                <td th:text="${user.address}"></td>
                 <td th:text="${user.role}"></td>
                 <td>
                     <form th:action="@{'/user/edit/' + ${user.id}}"method="get" style="display: inline;">

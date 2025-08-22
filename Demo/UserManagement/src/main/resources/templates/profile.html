@@ -18,6 +18,12 @@
    
     <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
 
+    <p><strong>Gender:</strong> <span th:text="${user.gender}"></span></p>
+
+    <p><strong>Phone:</strong> <span th:text="${user.phone}"></span></p>
+
+    <p><strong>Address:</strong> <span th:text="${user.address}"></span></p>
+
     <p><strong>Role:</strong> <span th:text="${user.role}"></span></p>
 
     <form th:action="@{'/user/edit/' + ${user.id}}"method="get" style="display: inline;">

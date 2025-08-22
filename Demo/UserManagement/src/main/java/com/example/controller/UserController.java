@@ -50,7 +50,8 @@ public class UserController {
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    @Qualifier("customUserDetailsService")    private UserDetailsService userDetailsService;
+    @Qualifier("customUserDetailsService")
+    private UserDetailsService userDetailsService;
 
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
@@ -63,6 +64,7 @@ public class UserController {
     public String registerUser(@ModelAttribute User user) {
         logger.info("Registering with new email:{}",user.getEmail());
         userService.registerUser(user);
+
         return "redirect:/login";
     }
     
